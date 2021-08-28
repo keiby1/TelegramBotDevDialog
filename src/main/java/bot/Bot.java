@@ -34,13 +34,14 @@ public class Bot extends TelegramLongPollingBot {
 
         Long chatId = update.getMessage().getChatId();
         String inputText = update.getMessage().getText();
+        System.out.println("start text: " + inputText);
 
         if (inputText.startsWith("/start")) {
-            sendMess(chatId, "Hello. My name is Alex");
+            sendMess(chatId, "/help - подсказка по командам бота");
         }
 
         else if (inputText.startsWith("/help")) {
-            sendMess(chatId,"/start - начало диалога\n /help - подсказка по командам бота");
+            sendMess(chatId,"/start - начало диалога\n/help - подсказка по командам бота");
         }
     }
 
