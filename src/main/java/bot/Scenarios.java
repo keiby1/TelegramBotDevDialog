@@ -20,4 +20,20 @@ public class Scenarios {
     public void setListCommands(LinkedList<Command> listCommands) {
         this.listCommands = listCommands;
     }
+
+    public void init(){
+        listCommands.add(new Command("/project", ""));
+        listCommands.add(new Command("/About", ""));
+
+        listCommands.add(new Command("/API", ""));
+        listCommands.add(new Command("/Protocols", ""));
+        listCommands.add(new Command("/Example", ""));
+        listCommands.add(new Command("/Integrations", ""));
+
+        listCommands.add(new Command("/Requirements", ""));
+        listCommands.add(new Command("/SLA", ""));
+        listCommands.add(new Command("/Performance", ""));
+
+        listCommands.add(new Command("/Somethingelse", ""));
+    }
 }
