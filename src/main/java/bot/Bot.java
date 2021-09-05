@@ -43,6 +43,7 @@ public class Bot extends TelegramLongPollingBot {
         else if (inputText.startsWith("/help")) {
             sendMess(chatId,"/start - начало диалога\n/help - подсказка по командам бота");
         }
+
     }
 
     private void sendMess(Long chatId, String s) {
